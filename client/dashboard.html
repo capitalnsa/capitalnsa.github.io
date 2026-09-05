@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utama - Capital Nusa</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/your_font_awesome_kit_id.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="dashboard-container">
+        <div class="lot-card">
+            <p class="lot-card-title">&bull; PENAWARAN LOT &middot; FASE 1</p>
+            <h2 class="lot-card-value">727.486 <span>lot tersisa</span></h2>
+            <div class="lot-card-stats">
+                <p>dari 1.000.000 lot &middot; Rp 5.000/lot</p>
+                <div class="stats-right">
+                    <p>PENAWARAN LOT</p>
+                    <p style="font-weight:bold;">27.25% TERJUAL</p>
+                </div>
+            </div>
+            <button class="beli-lot-btn">Beli Lot</button>
+        </div>
+        
+        <div class="balance-card">
+            <img src="assets/balance.png" alt="Balance Icon">
+            <div class="balance-info">
+                <h2>Rp 0</h2>
+                <p>Saldo Bank &middot; Rp 0</p>
+            </div>
+            <div class="action-buttons">
+                <a href="topup.html" class="action-btn"><i class="fas fa-plus"></i>Deposit</a>
+                <a href="withdraw.html" class="action-btn"><i class="fas fa-arrow-up"></i>Tarik</a>
+                <a href="#" class="action-btn"><i class="fas fa-sync"></i>Mutasi</a>
+            </div>
+        </div>
+        
+        <div class="program-card">
+            <h3>PROGRAM EKSKLUSIF</h3>
+            <h2 class="program-title">Tingkatkan Status <span>VIP</span></h2>
+            <p>Akses produk premium & profit lebih tinggi</p>
+            <button class="selengkapnya-btn">Selengkapnya</button>
+        </div>
+        
+        <!-- Demonstrasi XSS: Jangan pernah menggunakan .innerHTML -->
+        <div id="welcomeMessage">Selamat datang, [Nama Pengguna akan dimuat...]</div>
+
+        <div class="bottom-nav">
+            <a href="#" class="nav-item">
+                <i class="fas fa-chart-line nav-icon"></i>Portofolio
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fas fa-money-bill-alt nav-icon"></i>Investasi
+            </a>
+            <a href="#" class="nav-item active">
+                <div class="active-indicator">
+                    <i class="fas fa-home"></i>
+                </div>
+                Utama
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fas fa-file-alt nav-icon"></i>Bukti
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fas fa-user nav-icon"></i>Profil
+            </a>
+        </div>
+    </div>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
