@@ -1,0 +1,58 @@
+/* Warna Capital Nusa */
+:root {
+    --primary-green: #0a7346;
+    --dark-green: #064d30;
+    --light-gray: #f2f2f2;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+body { font-family: sans-serif; background-color: var(--white); margin: 0; padding: 20px; }
+
+/* Tampilan Login (image_0.png) */
+.login-container { display: flex; flex-direction: column; max-width: 400px; margin: auto; }
+.logo-header { display: flex; align-items: center; margin-bottom: 30px; }
+.logo-header img { width: 40px; height: 40px; margin-right: 10px; }
+.logo-header h1 { color: var(--primary-green); font-size: 24px; font-weight: bold; margin: 0; }
+.welcome-text { margin-bottom: 20px; font-size: 14px; color: #666; text-align: left; }
+.main-heading { font-size: 28px; font-weight: bold; margin-bottom: 10px; text-align: left; }
+.main-heading span { border-bottom: 2px solid var(--primary-green); }
+.input-group { margin-bottom: 15px; text-align: left;}
+.input-group label { display: block; font-size: 12px; color: #666; margin-bottom: 5px; }
+.input-group input { width: 100%; padding: 12px; border: none; border-bottom: 1px solid #ccc; font-size: 16px; box-sizing: border-box;}
+.input-group input:focus { border-bottom: 2px solid var(--primary-green); outline: none; }
+.masuk-btn { background-color: var(--primary-green); color: var(--white); border: none; padding: 15px; border-radius: 8px; font-size: 16px; cursor: pointer; margin-top: 15px; width: 100%;}
+.buat-btn { background-color: var(--white); color: var(--primary-green); border: 2px solid var(--primary-green); padding: 15px; border-radius: 8px; font-size: 16px; cursor: pointer; margin-top: 10px; width: 100%;}
+.ojk-badge { border: 1px solid #e0e0e0; border-radius: 10px; padding: 15px; display: flex; align-items: center; margin-top: 20px; font-size: 12px; color: #666; text-align: left;}
+.ojk-badge img { height: 30px; margin-right: 10px; }
+
+/* Tampilan Dasbor (image_2.png) */
+.dashboard-container { max-width: 400px; margin: auto; text-align: left;}
+.dashboard-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;}
+.back-btn { font-size: 24px; cursor: pointer; color: #666; }
+.lot-card { background-color: var(--dark-green); color: var(--white); padding: 20px; border-radius: 15px; margin-bottom: 20px;}
+.lot-card-title { font-size: 12px; color: #ddd; text-transform: uppercase; }
+.lot-card-value { font-size: 32px; font-weight: bold; margin: 10px 0;}
+.lot-card-stats { display: flex; justify-content: space-between; font-size: 12px; }
+.stats-right { text-align: right; border-left: 2px solid var(--primary-green); padding-left: 10px;}
+.beli-lot-btn { background-color: var(--white); color: var(--dark-green); border: none; padding: 10px 20px; border-radius: 8px; font-size: 14px; cursor: pointer; margin-top: 15px;}
+.balance-card { display: flex; align-items: center; background-color: var(--white); border: 1px solid #e0e0e0; padding: 15px; border-radius: 12px; margin-bottom: 20px; }
+.balance-card img { width: 30px; height: 30px; margin-right: 15px; }
+.balance-info h2 { font-size: 24px; font-weight: bold; margin: 0; }
+.balance-info p { font-size: 12px; color: #666; margin: 5px 0 0;}
+.action-buttons { display: flex; gap: 10px; margin-left: auto; }
+.action-btn { display: flex; flex-direction: column; align-items: center; text-decoration: none; color: #666; font-size: 12px; background: var(--white); border: 1px solid #e0e0e0; padding: 10px; border-radius: 8px;}
+.action-btn i { font-size: 20px; color: var(--primary-green); margin-bottom: 5px; }
+.program-card { background-color: var(--dark-green); color: var(--white); padding: 20px; border-radius: 15px;}
+.program-card h3 { color: #ddd; font-size: 12px; text-transform: uppercase; margin: 0 0 10px 0;}
+.program-title { font-size: 20px; font-weight: bold; line-height: 1.3; margin-bottom: 10px;}
+.program-title span { color: var(--primary-green); font-style: italic; }
+.program-card p { font-size: 12px; color: #ccc; margin-bottom: 15px; max-width: 70%;}
+.selengkapnya-btn { background-color: var(--white); color: var(--dark-green); border: none; padding: 10px 20px; border-radius: 8px; font-size: 14px; cursor: pointer; position: absolute; right: 20px; bottom: 20px;}
+.dashboard-container { position: relative; }
+.bottom-nav { position: fixed; bottom: 0; left: 0; right: 0; background-color: var(--white); border-top: 1px solid #e0e0e0; padding: 10px 20px; display: flex; justify-content: space-around;}
+.nav-item { text-decoration: none; color: #666; font-size: 12px; text-align: center; display: flex; flex-direction: column; align-items: center;}
+.nav-item i { font-size: 20px; margin-bottom: 5px;}
+.nav-item.active { color: var(--primary-green); }
+.active-indicator { width: 40px; height: 40px; background-color: var(--primary-green); color: white; border-radius: 50%; display: flex; justify-content: center; align-items: center; position: absolute; top: -20px; left: calc(50% - 20px); border: 4px solid white;}
+.nav-item.active .nav-icon { visibility: hidden;}
